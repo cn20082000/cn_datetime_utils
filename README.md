@@ -11,7 +11,7 @@ A Flutter package add more power to default DateTime and Duration class.
 ## Getting started
 
 Add this package to your dependency:
-```dart
+```yaml
 dependencies:
   cn_date_time: ^0.0.1
 ```
