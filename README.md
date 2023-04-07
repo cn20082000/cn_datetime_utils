@@ -1,39 +1,54 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# Datetime Utils
+A Flutter package add more power to default DateTime and Duration class.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- New unit "quarter".
+- Number of days in month, quarter and year.
+- Start and end of each unit.
+- Initialize duration faster.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add this package to your dependency:
+```dart
+dependencies:
+  cn_date_time: ^0.0.1
+```
+
+Add import and have fun:
+````dart
+import 'package:cn_datetime_utils/cn_datetime_utils.dart';
+````
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+- To use NEW unit "quarter":
+````dart
+final now = DateTime.now();
+final foo = now.quarter;
+````
 
-```dart
-const like = 'sample';
-```
+- To know the number of days of month:
+````dart
+final now = DateTime.now();
+final foo = now.daysOfMonth;
+````
 
-## Additional information
+- To get start or end of day:
+````dart
+final now = DateTime.now();
+final foo = now.startOfDay;
+final bar = now.endOfDay;
+````
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+- To initialize duration:
+````dart
+// 2 minutes and 6 seconds
+final foo = 2.1.minute;
+
+// 3 days
+final bar = 3.day;
+````
+
+
