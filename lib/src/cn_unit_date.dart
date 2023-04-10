@@ -1,5 +1,4 @@
 extension CnUnitDate on DateTime {
-
   /// The quarter [[1..4]]
   ///
   /// Return 0 if some error occur

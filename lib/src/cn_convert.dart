@@ -2,7 +2,6 @@ import 'cn_date_utils.dart';
 import 'cn_unit_date.dart';
 
 extension CnConvert on DateTime {
-
   /// Days of month [[28..31]]
   ///
   /// Return 0 if some error occur

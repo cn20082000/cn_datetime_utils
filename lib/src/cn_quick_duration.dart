@@ -1,5 +1,4 @@
 extension CnQuickDuration on num {
-
   /// Duration of n days
   Duration get day {
     final ho = (this - truncate()) * 24;

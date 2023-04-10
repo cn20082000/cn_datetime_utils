@@ -2,7 +2,6 @@ import 'cn_quick_duration.dart';
 import 'cn_unit_date.dart';
 
 extension CnStartOf on DateTime {
-
   /// Start of this millisecond
   DateTime get startOfMillisecond {
     return copyWith(

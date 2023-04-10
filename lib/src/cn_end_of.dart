@@ -3,7 +3,6 @@ import 'cn_quick_duration.dart';
 import 'cn_unit_date.dart';
 
 extension CnEndOf on DateTime {
-
   /// End of this millisecond
   DateTime get endOfMillisecond {
     return copyWith(
