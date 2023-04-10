@@ -1,6 +1,6 @@
 name: cn_datetime_utils
 description: A Flutter package add more power to default DateTime and Duration class.
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/cn20082000/cn_datetime_utils
 repository: https://github.com/cn20082000/cn_datetime_utils
 issue_tracker: https://github.com/cn20082000/cn_datetime_utils/issues
