@@ -3,12 +3,15 @@ import 'cn_quick_duration.dart';
 import 'cn_unit_date.dart';
 
 extension CnEndOf on DateTime {
+
+  /// End of this millisecond
   DateTime get endOfMillisecond {
     return copyWith(
       microsecond: 999,
     );
   }
 
+  /// End of this second
   DateTime get endOfSecond {
     return copyWith(
       millisecond: 999,
@@ -16,6 +19,7 @@ extension CnEndOf on DateTime {
     );
   }
 
+  /// End of this minute
   DateTime get endOfMinute {
     return copyWith(
       second: 59,
@@ -24,6 +28,7 @@ extension CnEndOf on DateTime {
     );
   }
 
+  /// End of this hour
   DateTime get endOfHour {
     return copyWith(
       minute: 59,
@@ -33,6 +38,7 @@ extension CnEndOf on DateTime {
     );
   }
 
+  /// End of this day
   DateTime get endOfDay {
     return copyWith(
       hour: 23,
@@ -43,6 +49,7 @@ extension CnEndOf on DateTime {
     );
   }
 
+  /// End of this week
   DateTime get endOfWeek {
     final sunday = add((7 - weekday).day);
     return sunday.copyWith(
@@ -54,6 +61,7 @@ extension CnEndOf on DateTime {
     );
   }
 
+  /// End of this month
   DateTime get endOfMonth {
     return copyWith(
       day: daysOfMonth,
@@ -65,6 +73,7 @@ extension CnEndOf on DateTime {
     );
   }
 
+  /// End of this quarter
   DateTime get endOfQuarter {
     int mo = 3;
     switch (quarter) {
@@ -89,6 +98,7 @@ extension CnEndOf on DateTime {
     );
   }
 
+  /// End of this year
   DateTime get endOfYear {
     return copyWith(
       month: 12,

@@ -1,4 +1,6 @@
 extension CnQuickDuration on num {
+
+  /// Duration of n days
   Duration get day {
     final ho = (this - truncate()) * 24;
     final min = (ho - ho.truncate()) * 60;
@@ -15,6 +17,7 @@ extension CnQuickDuration on num {
     );
   }
 
+  /// Duration of n hours
   Duration get hour {
     final min = (this - truncate()) * 60;
     final sec = (min - min.truncate()) * 60;
@@ -29,6 +32,7 @@ extension CnQuickDuration on num {
     );
   }
 
+  /// Duration of n minutes
   Duration get minute {
     final sec = (this - truncate()) * 60;
     final milli = (sec - sec.truncate()) * 1000;
@@ -41,6 +45,7 @@ extension CnQuickDuration on num {
     );
   }
 
+  /// Duration of n seconds
   Duration get second {
     final milli = (this - truncate()) * 1000;
     final micro = (milli - milli.truncate()) * 1000;
@@ -51,6 +56,7 @@ extension CnQuickDuration on num {
     );
   }
 
+  /// Duration of n milliseconds
   Duration get millisecond {
     final micro = (this - truncate()) * 1000;
     return Duration(
@@ -59,6 +65,7 @@ extension CnQuickDuration on num {
     );
   }
 
+  /// Duration of n microseconds
   Duration get microsecond {
     return Duration(
       microseconds: round(),
